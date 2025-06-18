@@ -1,18 +1,30 @@
 {
     "name": "zuborawka/vw2px",
-    "description": "Script for converting vw units to px units in stylesheets",
+    "description": "Convert CSS vw units to px based on a fixed width (e.g., 800px) for pseudo-mobile rendering on desktop.",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Zuborawka\\Vw2px\\": "src/"
+            "VW2PX\\" : "src/VW2PX/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "VW2PX\\Tests\\" : "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "zuborawka",
             "email": "zvg03134@nifty.ne.jp"
         }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+    ]
 }
